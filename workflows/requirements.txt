@@ -1,0 +1,7 @@
+cylc-flow
+pandas
+seaborn
+matplotlib
+cylc-uiserver[hub]
+llnl-hatchet
+pyyaml

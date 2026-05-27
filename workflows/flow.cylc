@@ -1,0 +1,180 @@
+#!Jinja2
+
+
+[scheduler]
+
+        
+    allow implicit tasks = True
+
+    ########## INPUT PARAMETERS ############
+
+    # Matrix of parameters. A task will be created for each combination of parameters.
+    {% set parameters =
+        {
+        "nodes" : [1],
+        "tasksPerNode" : [1, 2, 8, 24 , 144, 288 ],
+        "chunkSize" : [ 32 ], 
+        "chunksPerTask" : [ 64 ],
+        "direct" : [ False], 
+        "filesystem" : ["vast","lustre"],
+        "singleFile" : [ False],
+        "repeat" : [10]
+        }
+    %}
+
+    # Result directory
+    {%
+        set results_dir = "/work/d435/d435/lparisid435/met-lfric-cirrus/results/"
+    %}
+
+
+    # Machine Parameters
+    {%
+        set coresPerNode = 288
+    %}
+
+    # Number of times to repeat each experiment (to get an estimate of variability)
+    {%
+        set repeats = 1
+    %}
+
+    {% 
+        set dependencies_modules_path = "/work/z19/z19/lparisi/nfs-testing/benchmark_env/modules"
+    %}
+
+
+    ########## WORKFLOW DEFINITIONS ############
+    [[events]]
+        stall timeout = PT1H30M
+
+    
+    {% from "parameters" import expand_combinations, get_label %}
+    {% from "generate_config" import generate_posix_config %}
+
+
+    {% set combinations = expand_combinations(parameters, repeats) %}
+
+[scheduling]
+    [[queues]]
+        # Allow only one benchmark to run at the same time, to avoid interference between jobs.
+        [[[run_benchmark_queue]]]
+            limit = 1
+            members = RUN_BENCHMARK
+    
+    [[graph]]
+        
+        {% for combination in combinations %}
+        R1= """
+            setup_iobenchmark_{{get_label(combination)}} 
+            => run_iobenchmark_{{get_label(combination)}}
+            #? => cleanup_io_benchmark_{{get_label(combination)}}
+        """
+
+        {% endfor %}
+
+[runtime]
+            # Collection of all tasks
+                [[ALL]]
+
+            
+            # Group tasks that run the benchmark, to separate them from setup and cleanup tasks.
+                [[ RUN_BENCHMARK]]
+                    inherit = ALL
+             # Group tasks that run the benchmark, to separate them from setup and cleanup tasks.
+                [[ ANALYSIS]]
+                    inherit = ALL
+            {% for combination in combinations %}
+                [[ setup_iobenchmark_{{ get_label(combination) }} ]]
+                    platform = localhost
+                    script = """
+                            set -e
+                            # Working directory for the job
+                            WORKDIR=$CYLC_WORKFLOW_SHARE_DIR/iobenchmark_{{ get_label(combination) }}
+                            mkdir -p $WORKDIR
+                            
+
+                            
+                            {% if combination.filesystem == "lustre" %} 
+                                IO_PATH=/work/z19/z19/lparisi/nfs-testing/runs/data
+                            {% elif combination.filesystem == "vast" %} 
+                                IO_PATH=/vast/lparisi/data
+                            {% endif %}
+
+                            
+
+                            cd $WORKDIR
+                            
+                            # Loop over each parameter in the combination and pass the parameter as arguments to a python script
+                            python3 -m generate_config \
+                                --node={{ combination.nodes }} \
+                                --tasksPerNode={{ combination.tasksPerNode }} \
+                                --chunkSize={{ combination.chunkSize }} \
+                                --chunksPerTask={{ combination.chunksPerTask }} \
+                                {% if combination.direct %} --direct {% endif %} \
+                                {% if combination.singleFile %} --singleFile     {% endif %} \
+                                --repeat={{ combination.repeat }} \
+                                --output=$WORKDIR/config.yaml \
+                                --path=${IO_PATH}
+
+                            """
+                
+                [[ run_iobenchmark_{{ get_label(combination) }} ]]
+                    platform = cirrus
+                    inherit = RUN_BENCHMARK
+                    script = """
+
+                            set -e
+                            WORKDIR=$CYLC_WORKFLOW_SHARE_DIR/iobenchmark_{{ get_label(combination) }}
+                            cd $WORKDIR
+                            
+                            module load PrgEnv-gnu
+                            #module use {{ dependencies_modules_path }}
+                            
+                            # Libfabric env variables for Slingshot-11
+                            export FI_CXI_RX_MATCH_MODE=hybrid
+                            #export FI_CXI_OPTIMIZED_MRS=false
+                            export FI_CXI_DEFAULT_CQ_SIZE=1048576
+                            
+                            export SRUN_CPUS_PER_TASK=$SLURM_CPUS_PER_TASK
+                            export OMP_PLACES=cores
+                            export OMP_PROC_BIND=close
+
+                            EXEC=/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio
+                            
+                            
+                            {% if combination.filesystem == "lustre" %} 
+                                IO_PATH=/work/z19/z19/lparisi/nfs-testing/runs/data
+                            {% elif combination.filesystem == "vast" %} 
+                                IO_PATH=/vast/lparisi/data
+                            {% endif %}
+
+
+                            mkdir -p $IO_PATH # Create directory where to write/read the data
+                            rm -f $IO_PATH/* # Clean up any existing data in the directory, to avoid interference with the benchmark results.
+                            
+                            srun --mem=0 --hint=nomultithread --distribution=block:block $EXEC $WORKDIR/config.yaml
+                            
+                            """
+                    [[[directives]]]
+                        --nodes = {{ combination.nodes }}
+                        --ntasks-per-node = {{ combination.tasksPerNode }}
+                        --cpus-per-task = {{ coresPerNode // combination.tasksPerNode }}
+                        --time = 00:30:00
+                        --partition = standard
+                        --reservation = VAST
+                        --account = z19
+                        --qos = reservation
+                        --exclusive = 
+                
+                [[ cleanup_io_benchmark_{{ get_label(combination) }} ]]
+                    platform = localhost
+                    script = """
+                            
+                            # Working directory for the job
+                            WORKDIR=$CYLC_WORKFLOW_SHARE_DIR/iobenchmark_{{ get_label(combination) }}
+                            
+
+                            """    
+
+    {%endfor %}                    
+    

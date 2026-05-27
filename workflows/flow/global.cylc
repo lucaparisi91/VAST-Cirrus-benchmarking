@@ -1,0 +1,25 @@
+[platforms]
+    [[localhost]]
+        hosts = localhost
+        install target = localhost
+        global init-script = """
+            export BENCHMARKS_ROOT=/work/z19/shared/lparisi/vast_lustre_benchmarks26
+            export CYLC_RUN_DIR=${BENCHMARKS_ROOT}/runs/cylc-run
+            source /work/z19/z19/lparisi/nfs-testing/workflows/cylc_env/bin/activate
+            export HOME=${BENCHMARKS_ROOT}/runs
+        """
+    [[cirrus]]
+        hosts = localhost
+        job runner = slurm
+        install target = localhost
+        global init-script = """
+            export BENCHMARKS_ROOT=/work/z19/shared/lparisi/vast_lustre_benchmarks26
+            export CYLC_RUN_DIR=${BENCHMARKS_ROOT}/runs/cylc-run
+            source /work/z19/z19/lparisi/nfs-testing/workflows/cylc_env/bin/activate
+            export HOME=${BENCHMARKS_ROOT}/runs
+        """
+
+[install]
+    [[symlink dirs]]
+        [[[localhost]]]
+            run = ${BENCHMARKS_ROOT}/runs
