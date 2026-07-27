@@ -1,0 +1,582 @@
+{
+  "session_info": {
+    "data_version": "4.1",
+    "hostname": "login03",
+    "uuid": "274c5db9-8fd6-4aa9-869f-ee0ce80ba527",
+    "time_start": "20260710T160405+0100",
+    "time_start_unix": 1783695845.5084057,
+    "time_end": "20260710T160538+0100",
+    "time_end_unix": 1783695938.1042676,
+    "time_elapsed": 92.59586191177368,
+    "cmdline": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/bin/reframe -R -C /work/z19/z19/lparisi/nfs-testing/epcc-reframe/configuration/cirrus-ex.py --keep-stage-files -c /work/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/ -J partition=maintenance-all -J qos=maintenance -J time=00:60:00 -r -n GromacsCPUCheck --report-file sequential.json --performance-report --repeat 4",
+    "config_files": [
+      "<builtin>",
+      "/work/z19/z19/lparisi/nfs-testing/epcc-reframe/configuration/cirrus-ex.py"
+    ],
+    "log_files": [
+      "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/reframe.out",
+      "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/reframe.log"
+    ],
+    "prefix_output": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output",
+    "prefix_stage": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage",
+    "user": "lparisi",
+    "version": "4.8.4",
+    "workdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe",
+    "num_cases": 4,
+    "num_failures": 0,
+    "num_aborted": 0,
+    "num_skipped": 0
+  },
+  "runs": [
+    {
+      "num_cases": 4,
+      "num_failures": 0,
+      "num_aborted": 0,
+      "num_skipped": 0,
+      "run_index": 0,
+      "testcases": [
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [],
+          "dependencies_conceptual": [],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-07-10T16:05:20+01:00",
+          "job_completion_time_unix": 1783695920.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "274c5db9-8fd6-4aa9-869f-ee0ce80ba527",
+          "time_compile": 0.004347324371337891,
+          "time_performance": 0.0016069412231445312,
+          "time_run": 76.24661564826965,
+          "time_sanity": 0.0020928382873535156,
+          "time_setup": 0.022570371627807617,
+          "time_total": 76.36683011054993,
+          "uuid": "274c5db9-8fd6-4aa9-869f-ee0ce80ba527:0:0",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/GromacsCPUCheck_ac054657",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0304",
+            "cs-n0305",
+            "cs-n0306",
+            "cs-n0307"
+          ],
+          "job_submit_time": 1783695846.7261033,
+          "jobid": "288292",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "cores": {
+            "archer2:compute": 128,
+            "archer2-tds:compute": 128,
+            "cirrus:compute": 36,
+            "cirrus:compute-gpu": 40,
+            "cirrus-ex:compute": 288
+          },
+          "descr": "GROMACS 1400k performance -- CPU",
+          "display_name": "GromacsCPUCheck %.repeat_no=0",
+          "env_vars": {
+            "OMP_NUM_THREADS": "1"
+          },
+          "exclusive_access": false,
+          "executable": "gmx_mpi",
+          "executable_opts": [
+            "mdrun",
+            "-noconfout",
+            "-s",
+            "gmx_1400k_atoms.tpr"
+          ],
+          "extra_resources": {
+            "qos": {
+              "qos": "standard"
+            }
+          },
+          "hashcode": "ac054657",
+          "keep_files": [
+            "md.log"
+          ],
+          "local": false,
+          "maintainers": [
+            "r.apostolo@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [
+            "gromacs"
+          ],
+          "name": "GromacsCPUCheck",
+          "num_cpus_per_task": 1,
+          "num_gpus_per_node": null,
+          "num_tasks": 1152,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 288,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:energy": [
+              -12072300.0,
+              0,
+              null,
+              null,
+              "kJ/mol",
+              "pass"
+            ],
+            "cirrus-ex:compute:performance": [
+              78.874,
+              0,
+              null,
+              null,
+              "ns/day",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/apps/gromacs",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "GromacsCPUCheck_ac054657",
+          "sourcepath": "",
+          "sourcesdir": "src",
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/GromacsCPUCheck_ac054657",
+          "strict_check": true,
+          "tags": [
+            "small",
+            "performance",
+            "applications"
+          ],
+          "time_limit": 600.0,
+          "unique_name": "GromacsCPUCheck_0",
+          "use_multithreading": false,
+          "valid_prog_environs": [
+            "PrgEnv-gnu",
+            "gcc",
+            "nvidia-mpi"
+          ],
+          "valid_systems": [
+            "archer2:compute",
+            "cirrus:compute",
+            "cirrus-ex:compute"
+          ],
+          "variables": {
+            "OMP_NUM_THREADS": "1"
+          }
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [],
+          "dependencies_conceptual": [],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-07-10T16:05:21+01:00",
+          "job_completion_time_unix": 1783695921.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "274c5db9-8fd6-4aa9-869f-ee0ce80ba527",
+          "time_compile": 0.004538059234619141,
+          "time_performance": 0.0011119842529296875,
+          "time_run": 75.46883201599121,
+          "time_sanity": 0.0015459060668945312,
+          "time_setup": 0.019980669021606445,
+          "time_total": 76.65434217453003,
+          "uuid": "274c5db9-8fd6-4aa9-869f-ee0ce80ba527:0:1",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/GromacsCPUCheck_edb424d5",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0320",
+            "cs-n0321",
+            "cs-n0322",
+            "cs-n0323"
+          ],
+          "job_submit_time": 1783695847.4277933,
+          "jobid": "288293",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "cores": {
+            "archer2:compute": 128,
+            "archer2-tds:compute": 128,
+            "cirrus:compute": 36,
+            "cirrus:compute-gpu": 40,
+            "cirrus-ex:compute": 288
+          },
+          "descr": "GROMACS 1400k performance -- CPU",
+          "display_name": "GromacsCPUCheck %.repeat_no=1",
+          "env_vars": {
+            "OMP_NUM_THREADS": "1"
+          },
+          "exclusive_access": false,
+          "executable": "gmx_mpi",
+          "executable_opts": [
+            "mdrun",
+            "-noconfout",
+            "-s",
+            "gmx_1400k_atoms.tpr"
+          ],
+          "extra_resources": {
+            "qos": {
+              "qos": "standard"
+            }
+          },
+          "hashcode": "edb424d5",
+          "keep_files": [
+            "md.log"
+          ],
+          "local": false,
+          "maintainers": [
+            "r.apostolo@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [
+            "gromacs"
+          ],
+          "name": "GromacsCPUCheck",
+          "num_cpus_per_task": 1,
+          "num_gpus_per_node": null,
+          "num_tasks": 1152,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 288,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:energy": [
+              -12072000.0,
+              0,
+              null,
+              null,
+              "kJ/mol",
+              "pass"
+            ],
+            "cirrus-ex:compute:performance": [
+              77.785,
+              0,
+              null,
+              null,
+              "ns/day",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/apps/gromacs",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "GromacsCPUCheck_edb424d5",
+          "sourcepath": "",
+          "sourcesdir": "src",
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/GromacsCPUCheck_edb424d5",
+          "strict_check": true,
+          "tags": [
+            "small",
+            "performance",
+            "applications"
+          ],
+          "time_limit": 600.0,
+          "unique_name": "GromacsCPUCheck_1",
+          "use_multithreading": false,
+          "valid_prog_environs": [
+            "PrgEnv-gnu",
+            "gcc",
+            "nvidia-mpi"
+          ],
+          "valid_systems": [
+            "archer2:compute",
+            "cirrus:compute",
+            "cirrus-ex:compute"
+          ],
+          "variables": {
+            "OMP_NUM_THREADS": "1"
+          }
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [],
+          "dependencies_conceptual": [],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-07-10T16:05:37+01:00",
+          "job_completion_time_unix": 1783695937.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "274c5db9-8fd6-4aa9-869f-ee0ce80ba527",
+          "time_compile": 0.004282951354980469,
+          "time_performance": 0.0011413097381591797,
+          "time_run": 90.67118239402771,
+          "time_sanity": 0.0016634464263916016,
+          "time_setup": 0.01983642578125,
+          "time_total": 92.52842473983765,
+          "uuid": "274c5db9-8fd6-4aa9-869f-ee0ce80ba527:0:2",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/GromacsCPUCheck_057bc736",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0336",
+            "cs-n0337",
+            "cs-n0338",
+            "cs-n0339"
+          ],
+          "job_submit_time": 1783695848.0952787,
+          "jobid": "288294",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "cores": {
+            "archer2:compute": 128,
+            "archer2-tds:compute": 128,
+            "cirrus:compute": 36,
+            "cirrus:compute-gpu": 40,
+            "cirrus-ex:compute": 288
+          },
+          "descr": "GROMACS 1400k performance -- CPU",
+          "display_name": "GromacsCPUCheck %.repeat_no=2",
+          "env_vars": {
+            "OMP_NUM_THREADS": "1"
+          },
+          "exclusive_access": false,
+          "executable": "gmx_mpi",
+          "executable_opts": [
+            "mdrun",
+            "-noconfout",
+            "-s",
+            "gmx_1400k_atoms.tpr"
+          ],
+          "extra_resources": {
+            "qos": {
+              "qos": "standard"
+            }
+          },
+          "hashcode": "057bc736",
+          "keep_files": [
+            "md.log"
+          ],
+          "local": false,
+          "maintainers": [
+            "r.apostolo@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [
+            "gromacs"
+          ],
+          "name": "GromacsCPUCheck",
+          "num_cpus_per_task": 1,
+          "num_gpus_per_node": null,
+          "num_tasks": 1152,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 288,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:energy": [
+              -12071100.0,
+              0,
+              null,
+              null,
+              "kJ/mol",
+              "pass"
+            ],
+            "cirrus-ex:compute:performance": [
+              44.453,
+              0,
+              null,
+              null,
+              "ns/day",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/apps/gromacs",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "GromacsCPUCheck_057bc736",
+          "sourcepath": "",
+          "sourcesdir": "src",
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/GromacsCPUCheck_057bc736",
+          "strict_check": true,
+          "tags": [
+            "small",
+            "performance",
+            "applications"
+          ],
+          "time_limit": 600.0,
+          "unique_name": "GromacsCPUCheck_2",
+          "use_multithreading": false,
+          "valid_prog_environs": [
+            "PrgEnv-gnu",
+            "gcc",
+            "nvidia-mpi"
+          ],
+          "valid_systems": [
+            "archer2:compute",
+            "cirrus:compute",
+            "cirrus-ex:compute"
+          ],
+          "variables": {
+            "OMP_NUM_THREADS": "1"
+          }
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [],
+          "dependencies_conceptual": [],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-07-10T16:05:36+01:00",
+          "job_completion_time_unix": 1783695936.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "274c5db9-8fd6-4aa9-869f-ee0ce80ba527",
+          "time_compile": 0.004337787628173828,
+          "time_performance": 0.0011546611785888672,
+          "time_run": 89.56970357894897,
+          "time_sanity": 0.04383420944213867,
+          "time_setup": 0.020134687423706055,
+          "time_total": 92.06514382362366,
+          "uuid": "274c5db9-8fd6-4aa9-869f-ee0ce80ba527:0:3",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/GromacsCPUCheck_b222b9d2",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0352",
+            "cs-n0353",
+            "cs-n0354",
+            "cs-n0355"
+          ],
+          "job_submit_time": 1783695848.8060198,
+          "jobid": "288295",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "cores": {
+            "archer2:compute": 128,
+            "archer2-tds:compute": 128,
+            "cirrus:compute": 36,
+            "cirrus:compute-gpu": 40,
+            "cirrus-ex:compute": 288
+          },
+          "descr": "GROMACS 1400k performance -- CPU",
+          "display_name": "GromacsCPUCheck %.repeat_no=3",
+          "env_vars": {
+            "OMP_NUM_THREADS": "1"
+          },
+          "exclusive_access": false,
+          "executable": "gmx_mpi",
+          "executable_opts": [
+            "mdrun",
+            "-noconfout",
+            "-s",
+            "gmx_1400k_atoms.tpr"
+          ],
+          "extra_resources": {
+            "qos": {
+              "qos": "standard"
+            }
+          },
+          "hashcode": "b222b9d2",
+          "keep_files": [
+            "md.log"
+          ],
+          "local": false,
+          "maintainers": [
+            "r.apostolo@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [
+            "gromacs"
+          ],
+          "name": "GromacsCPUCheck",
+          "num_cpus_per_task": 1,
+          "num_gpus_per_node": null,
+          "num_tasks": 1152,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 288,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:energy": [
+              -12071200.0,
+              0,
+              null,
+              null,
+              "kJ/mol",
+              "pass"
+            ],
+            "cirrus-ex:compute:performance": [
+              44.997,
+              0,
+              null,
+              null,
+              "ns/day",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/apps/gromacs",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "GromacsCPUCheck_b222b9d2",
+          "sourcepath": "",
+          "sourcesdir": "src",
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/GromacsCPUCheck_b222b9d2",
+          "strict_check": true,
+          "tags": [
+            "small",
+            "performance",
+            "applications"
+          ],
+          "time_limit": 600.0,
+          "unique_name": "GromacsCPUCheck_3",
+          "use_multithreading": false,
+          "valid_prog_environs": [
+            "PrgEnv-gnu",
+            "gcc",
+            "nvidia-mpi"
+          ],
+          "valid_systems": [
+            "archer2:compute",
+            "cirrus:compute",
+            "cirrus-ex:compute"
+          ],
+          "variables": {
+            "OMP_NUM_THREADS": "1"
+          }
+        }
+      ]
+    }
+  ],
+  "restored_cases": []
+}

@@ -1,0 +1,2816 @@
+{
+  "session_info": {
+    "data_version": "4.1",
+    "hostname": "login02",
+    "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+    "time_start": "20260625T092352+0100",
+    "time_start_unix": 1782375832.6327744,
+    "time_end": "20260625T162833+0100",
+    "time_end_unix": 1782401313.2191465,
+    "time_elapsed": 25480.58637213707,
+    "cmdline": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/bin/reframe -R -C /work/z19/z19/lparisi/nfs-testing/epcc-reframe/configuration/cirrus-ex.py --keep-stage-files -c /work/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth -J time=00:20:00 -r -n cbenchio_posix_sequential --report-file original.json --performance-report --repeat 4",
+    "config_files": [
+      "<builtin>",
+      "/work/z19/z19/lparisi/nfs-testing/epcc-reframe/configuration/cirrus-ex.py"
+    ],
+    "log_files": [
+      "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/reframe.out",
+      "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/reframe.log"
+    ],
+    "prefix_output": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output",
+    "prefix_stage": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage",
+    "user": "lparisi",
+    "version": "4.8.4",
+    "workdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe",
+    "num_cases": 20,
+    "num_failures": 0,
+    "num_aborted": 0,
+    "num_skipped": 0
+  },
+  "runs": [
+    {
+      "num_cases": 20,
+      "num_failures": 0,
+      "num_aborted": 0,
+      "num_skipped": 0,
+      "run_index": 0,
+      "testcases": [
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [],
+          "dependencies_conceptual": [],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio/cbenchio_benchmarks.py",
+          "fixture": true,
+          "job_completion_time": "2026-06-25T09:35:27+01:00",
+          "job_completion_time_unix": 1782376527.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.0043315887451171875,
+          "time_performance": 0.003760099411010742,
+          "time_run": 20125.784938812256,
+          "time_sanity": 0.0014948844909667969,
+          "time_setup": 0.024602413177490234,
+          "time_total": 20125.910259485245,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:0",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_write_e290a45e",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0195"
+          ],
+          "job_submit_time": 1782375833.3649848,
+          "jobid": "269088",
+          "system": "cirrus-ex",
+          "api": "posix",
+          "base_path": "/work/z19/z19/lparisi/nfs-testing/run/data",
+          "build_locally": true,
+          "build_time_limit": null,
+          "chunk_size": 4096,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_write %nodes=1 %tasks_per_node=1 %base_path=/work/z19/z19/lparisi/nfs-testing/run/data %api=posix %chunk_size=4096 ~cirrus-ex:compute+PrgEnv-gnu",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "e290a45e",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_write %nodes=1 %tasks_per_node=1 %base_path=/work/z19/z19/lparisi/nfs-testing/run/data %api=posix %chunk_size=4096 ~cirrus-ex:compute+PrgEnv-gnu",
+          "nodes": 1,
+          "num_cpus_per_task": 288,
+          "num_gpus_per_node": null,
+          "num_tasks": 1,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 1,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              2.2164563656200524,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              2.0214929363610654,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              2.3162386936133506,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              2.1957943515515006,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              2.202107605399957,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [
+            "rm -rf /work/z19/z19/lparisi/nfs-testing/run/data/cbenchio_posix_sequential_write_e290a45e",
+            "mkdir -p /work/z19/z19/lparisi/nfs-testing/run/data/cbenchio_posix_sequential_write_e290a45e",
+            "chmod -R o+wXr /work/z19/z19/lparisi/nfs-testing/run/data/cbenchio_posix_sequential_write_e290a45e"
+          ],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_write_e290a45e",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_write_e290a45e",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "tasks_per_node": 1,
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_write_d8c70f44",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_d8c70f44",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_d8c70f44"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T14:58:51+01:00",
+          "job_completion_time_unix": 1782395931.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.0042362213134765625,
+          "time_performance": 0.003931999206542969,
+          "time_run": 22.319246768951416,
+          "time_sanity": 0.0017910003662109375,
+          "time_setup": 0.022452116012573242,
+          "time_total": 19403.38533425331,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:1",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_0d959339",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0246"
+          ],
+          "job_submit_time": 1782395913.1837885,
+          "jobid": "271298",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=0 %write_test.nodes=1 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "0d959339",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=1 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 288,
+          "num_gpus_per_node": null,
+          "num_tasks": 1,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 1,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              1.3073299252996966,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              1.893898258184829,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              1.781106816218904,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              2.1492543799972665,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              2.120273834636508,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_0d959339",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_0d959339",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_00",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_d8c70f44",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_d8c70f44"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T14:59:01+01:00",
+          "job_completion_time_unix": 1782395941.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.004327058792114258,
+          "time_performance": 0.003050088882446289,
+          "time_run": 8.84041690826416,
+          "time_sanity": 0.005989789962768555,
+          "time_setup": 0.022483348846435547,
+          "time_total": 19411.44937491417,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:2",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_ae90a3af",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0246"
+          ],
+          "job_submit_time": 1782395934.6430948,
+          "jobid": "271299",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=1 %write_test.nodes=1 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "ae90a3af",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=1 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 288,
+          "num_gpus_per_node": null,
+          "num_tasks": 1,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 1,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              1.7288261326897314,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              2.1591058383626933,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              1.827551542856852,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              1.5394471552051325,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              1.4565401873546062,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_ae90a3af",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_ae90a3af",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_01",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_d8c70f44",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_d8c70f44"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T14:59:09+01:00",
+          "job_completion_time_unix": 1782395949.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.0042269229888916016,
+          "time_performance": 0.003307819366455078,
+          "time_run": 8.092479944229126,
+          "time_sanity": 0.001657247543334961,
+          "time_setup": 0.022874832153320312,
+          "time_total": 19418.762997865677,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:3",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_79dc15c2",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0246"
+          ],
+          "job_submit_time": 1782395942.7699606,
+          "jobid": "271300",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=2 %write_test.nodes=1 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "79dc15c2",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=1 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 288,
+          "num_gpus_per_node": null,
+          "num_tasks": 1,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 1,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              1.7611201895490973,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              1.7103176106841587,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              1.6790545253065583,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              1.816983293722993,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              1.6279553237136322,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_79dc15c2",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_79dc15c2",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_02",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_d8c70f44",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_d8c70f44"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T14:59:16+01:00",
+          "job_completion_time_unix": 1782395956.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.004158973693847656,
+          "time_performance": 0.003404378890991211,
+          "time_run": 8.972355127334595,
+          "time_sanity": 0.011142492294311523,
+          "time_setup": 0.0225372314453125,
+          "time_total": 19426.973532676697,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:4",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_c939f9b5",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0246"
+          ],
+          "job_submit_time": 1782395950.1269414,
+          "jobid": "271301",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=3 %write_test.nodes=1 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "c939f9b5",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=1 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 288,
+          "num_gpus_per_node": null,
+          "num_tasks": 1,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 1,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              2.968758261607288,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              1.6583645215062528,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              1.890619633042288,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              1.8494965036203108,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              2.5267746409992737,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_c939f9b5",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_c939f9b5",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_03",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [],
+          "dependencies_conceptual": [],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio/cbenchio_benchmarks.py",
+          "fixture": true,
+          "job_completion_time": "2026-06-25T09:35:51+01:00",
+          "job_completion_time_unix": 1782376551.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.004330635070800781,
+          "time_performance": 0.0036957263946533203,
+          "time_run": 19532.21266722679,
+          "time_sanity": 0.0015683174133300781,
+          "time_setup": 0.02197408676147461,
+          "time_total": 20230.341246128082,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:5",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_write_7fccde7c",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0195"
+          ],
+          "job_submit_time": 1782376531.2820015,
+          "jobid": "269256",
+          "system": "cirrus-ex",
+          "api": "posix",
+          "base_path": "/work/z19/z19/lparisi/nfs-testing/run/data",
+          "build_locally": true,
+          "build_time_limit": null,
+          "chunk_size": 4096,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_write %nodes=1 %tasks_per_node=24 %base_path=/work/z19/z19/lparisi/nfs-testing/run/data %api=posix %chunk_size=4096 ~cirrus-ex:compute+PrgEnv-gnu",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "7fccde7c",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_write %nodes=1 %tasks_per_node=24 %base_path=/work/z19/z19/lparisi/nfs-testing/run/data %api=posix %chunk_size=4096 ~cirrus-ex:compute+PrgEnv-gnu",
+          "nodes": 1,
+          "num_cpus_per_task": 12,
+          "num_gpus_per_node": null,
+          "num_tasks": 24,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 24,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              8.180971385697353,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              10.649107683646843,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              10.600360625534607,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              10.383707544016922,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              9.87003566847863,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [
+            "rm -rf /work/z19/z19/lparisi/nfs-testing/run/data/cbenchio_posix_sequential_write_7fccde7c",
+            "mkdir -p /work/z19/z19/lparisi/nfs-testing/run/data/cbenchio_posix_sequential_write_7fccde7c",
+            "chmod -R o+wXr /work/z19/z19/lparisi/nfs-testing/run/data/cbenchio_posix_sequential_write_7fccde7c"
+          ],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_write_7fccde7c",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_write_7fccde7c",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "tasks_per_node": 24,
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_write_1ff1b941",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_1ff1b941",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_1ff1b941"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T14:59:35+01:00",
+          "job_completion_time_unix": 1782395975.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.004206418991088867,
+          "time_performance": 0.0032830238342285156,
+          "time_run": 20.272829055786133,
+          "time_sanity": 0.010819435119628906,
+          "time_setup": 0.028918743133544922,
+          "time_total": 19425.114569425583,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:6",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_911ce2cc",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0246"
+          ],
+          "job_submit_time": 1782395958.290935,
+          "jobid": "271302",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=0 %write_test.nodes=1 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "911ce2cc",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=1 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 12,
+          "num_gpus_per_node": null,
+          "num_tasks": 24,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 24,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              10.994515328693668,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              9.186190055430426,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              8.596457188277787,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              9.578668553504665,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              10.479525582009392,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_911ce2cc",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_911ce2cc",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_04",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_1ff1b941",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_1ff1b941"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T15:00:06+01:00",
+          "job_completion_time_unix": 1782396006.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.004171133041381836,
+          "time_performance": 0.0036346912384033203,
+          "time_run": 31.878761768341064,
+          "time_sanity": 0.001931905746459961,
+          "time_setup": 0.028679847717285156,
+          "time_total": 19456.21609520912,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:7",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_4ce9c0ec",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0246"
+          ],
+          "job_submit_time": 1782395977.7552612,
+          "jobid": "271303",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=1 %write_test.nodes=1 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "4ce9c0ec",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=1 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 12,
+          "num_gpus_per_node": null,
+          "num_tasks": 24,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 24,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              9.10208908373762,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              8.98364649301554,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              7.1839520021913605,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              9.730992880088364,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              10.712656759667317,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_4ce9c0ec",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_4ce9c0ec",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_05",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_1ff1b941",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_1ff1b941"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T15:00:33+01:00",
+          "job_completion_time_unix": 1782396033.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.004263401031494141,
+          "time_performance": 0.0031769275665283203,
+          "time_run": 26.277113676071167,
+          "time_sanity": 0.001836538314819336,
+          "time_setup": 0.02899932861328125,
+          "time_total": 19481.781683683395,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:8",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_18e27152",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0246"
+          ],
+          "job_submit_time": 1782396008.915873,
+          "jobid": "271304",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=2 %write_test.nodes=1 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "18e27152",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=1 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 12,
+          "num_gpus_per_node": null,
+          "num_tasks": 24,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 24,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              10.005233081914238,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              6.864587883499367,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              8.25442202508485,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              8.570556327025864,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              7.035455536331306,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_18e27152",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_18e27152",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_06",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_1ff1b941",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_1ff1b941"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T15:01:00+01:00",
+          "job_completion_time_unix": 1782396060.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.004280567169189453,
+          "time_performance": 0.003377199172973633,
+          "time_run": 29.004428386688232,
+          "time_sanity": 0.0018911361694335938,
+          "time_setup": 0.02847003936767578,
+          "time_total": 19510.06204342842,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:9",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_21211bb3",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0246"
+          ],
+          "job_submit_time": 1782396034.4955266,
+          "jobid": "271305",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=3 %write_test.nodes=1 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "21211bb3",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=1 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 12,
+          "num_gpus_per_node": null,
+          "num_tasks": 24,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 24,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              9.577154734897173,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              6.901108556244314,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              7.865379442703711,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              7.91491040782395,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              8.033819488880884,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_21211bb3",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_21211bb3",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_07",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [],
+          "dependencies_conceptual": [],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio/cbenchio_benchmarks.py",
+          "fixture": true,
+          "job_completion_time": "2026-06-25T09:58:15+01:00",
+          "job_completion_time_unix": 1782377895.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.004257917404174805,
+          "time_performance": 0.0032553672790527344,
+          "time_run": 24619.44002509117,
+          "time_sanity": 0.002043008804321289,
+          "time_setup": 0.019911766052246094,
+          "time_total": 25338.952401161194,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:10",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_write_3cc55125",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0195",
+            "cs-n0211",
+            "cs-n0237",
+            "cs-n0245"
+          ],
+          "job_submit_time": 1782376552.6824381,
+          "jobid": "269257",
+          "system": "cirrus-ex",
+          "api": "posix",
+          "base_path": "/work/z19/z19/lparisi/nfs-testing/run/data",
+          "build_locally": true,
+          "build_time_limit": null,
+          "chunk_size": 4096,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_write %nodes=4 %tasks_per_node=1 %base_path=/work/z19/z19/lparisi/nfs-testing/run/data %api=posix %chunk_size=4096 ~cirrus-ex:compute+PrgEnv-gnu",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "3cc55125",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_write %nodes=4 %tasks_per_node=1 %base_path=/work/z19/z19/lparisi/nfs-testing/run/data %api=posix %chunk_size=4096 ~cirrus-ex:compute+PrgEnv-gnu",
+          "nodes": 4,
+          "num_cpus_per_task": 288,
+          "num_gpus_per_node": null,
+          "num_tasks": 4,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 1,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              9.078648672306285,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              8.175053099706874,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              8.748542607479642,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              8.728321004298863,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              8.56344436469047,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [
+            "rm -rf /work/z19/z19/lparisi/nfs-testing/run/data/cbenchio_posix_sequential_write_3cc55125",
+            "mkdir -p /work/z19/z19/lparisi/nfs-testing/run/data/cbenchio_posix_sequential_write_3cc55125",
+            "chmod -R o+wXr /work/z19/z19/lparisi/nfs-testing/run/data/cbenchio_posix_sequential_write_3cc55125"
+          ],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_write_3cc55125",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_write_3cc55125",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "tasks_per_node": 1,
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_write_246a14d7",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_246a14d7",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_246a14d7"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T15:08:19+01:00",
+          "job_completion_time_unix": 1782396499.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.0041790008544921875,
+          "time_performance": 0.003553152084350586,
+          "time_run": 448.537109375,
+          "time_sanity": 0.0019016265869140625,
+          "time_setup": 0.023396730422973633,
+          "time_total": 18608.73984146118,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:11",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_353204f1",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0214",
+            "cs-n0215",
+            "cs-n0246",
+            "cs-n0248"
+          ],
+          "job_submit_time": 1782396062.7738354,
+          "jobid": "271306",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=0 %write_test.nodes=4 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "353204f1",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=4 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 288,
+          "num_gpus_per_node": null,
+          "num_tasks": 4,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 1,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              3.625411329682312,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              5.006736531950118,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              5.285054678269513,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              4.881311935433815,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              5.108542111117363,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_353204f1",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_353204f1",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_08",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_246a14d7",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_246a14d7"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T16:25:53+01:00",
+          "job_completion_time_unix": 1782401153.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.004220724105834961,
+          "time_performance": 0.003139019012451172,
+          "time_run": 4645.445400476456,
+          "time_sanity": 0.0017843246459960938,
+          "time_setup": 0.02252793312072754,
+          "time_total": 23253.48628807068,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:12",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_1301a273",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0195",
+            "cs-n0211",
+            "cs-n0237",
+            "cs-n0245"
+          ],
+          "job_submit_time": 1782396510.6424503,
+          "jobid": "271367",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=1 %write_test.nodes=4 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "1301a273",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=4 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 288,
+          "num_gpus_per_node": null,
+          "num_tasks": 4,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 1,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              4.966087964317767,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              5.157225132243273,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              5.237835456784367,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              5.615141281658237,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              5.455610059624966,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_1301a273",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_1301a273",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_09",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_246a14d7",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_246a14d7"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T16:26:01+01:00",
+          "job_completion_time_unix": 1782401161.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.004154205322265625,
+          "time_performance": 0.003171205520629883,
+          "time_run": 8.75817322731018,
+          "time_sanity": 0.0016827583312988281,
+          "time_setup": 0.02348470687866211,
+          "time_total": 23261.460436820984,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:13",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_7bd8c1bc",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0195",
+            "cs-n0211",
+            "cs-n0237",
+            "cs-n0245"
+          ],
+          "job_submit_time": 1782401155.331412,
+          "jobid": "271519",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=2 %write_test.nodes=4 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "7bd8c1bc",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=4 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 288,
+          "num_gpus_per_node": null,
+          "num_tasks": 4,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 1,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              6.1825535434371375,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              6.397951896176715,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              6.400306001034919,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              6.034228664766165,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              6.008771815988824,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_7bd8c1bc",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_7bd8c1bc",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_10",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_246a14d7",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_246a14d7"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T16:26:09+01:00",
+          "job_completion_time_unix": 1782401169.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.004242420196533203,
+          "time_performance": 0.0033659934997558594,
+          "time_run": 8.721746683120728,
+          "time_sanity": 0.0018935203552246094,
+          "time_setup": 0.021789073944091797,
+          "time_total": 23269.482575416565,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:14",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_f828708b",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0195",
+            "cs-n0211",
+            "cs-n0237",
+            "cs-n0245"
+          ],
+          "job_submit_time": 1782401163.4268675,
+          "jobid": "271520",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=3 %write_test.nodes=4 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "f828708b",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=4 %write_test.tasks_per_node=1 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 288,
+          "num_gpus_per_node": null,
+          "num_tasks": 4,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 1,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              7.61420929067212,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              7.614581574148557,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              7.666784191599892,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              8.209306296448746,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              7.829771715334992,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_f828708b",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_f828708b",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_11",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [],
+          "dependencies_conceptual": [],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio/cbenchio_benchmarks.py",
+          "fixture": true,
+          "job_completion_time": "2026-06-25T14:58:28+01:00",
+          "job_completion_time_unix": 1782395908.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.0042362213134765625,
+          "time_performance": 0.0030782222747802734,
+          "time_run": 23411.799196720123,
+          "time_sanity": 0.0017495155334472656,
+          "time_setup": 0.021678686141967773,
+          "time_total": 25480.4665517807,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:15",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_write_33aca286",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0202",
+            "cs-n0220",
+            "cs-n0246",
+            "cs-n0252"
+          ],
+          "job_submit_time": 1782377901.9023242,
+          "jobid": "269431",
+          "system": "cirrus-ex",
+          "api": "posix",
+          "base_path": "/work/z19/z19/lparisi/nfs-testing/run/data",
+          "build_locally": true,
+          "build_time_limit": null,
+          "chunk_size": 4096,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_write %nodes=4 %tasks_per_node=24 %base_path=/work/z19/z19/lparisi/nfs-testing/run/data %api=posix %chunk_size=4096 ~cirrus-ex:compute+PrgEnv-gnu",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "33aca286",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_write %nodes=4 %tasks_per_node=24 %base_path=/work/z19/z19/lparisi/nfs-testing/run/data %api=posix %chunk_size=4096 ~cirrus-ex:compute+PrgEnv-gnu",
+          "nodes": 4,
+          "num_cpus_per_task": 12,
+          "num_gpus_per_node": null,
+          "num_tasks": 96,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 24,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              23.063849783614536,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              27.49193733629964,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              31.430545849896802,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              31.953675403390264,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              37.91539679689384,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [
+            "rm -rf /work/z19/z19/lparisi/nfs-testing/run/data/cbenchio_posix_sequential_write_33aca286",
+            "mkdir -p /work/z19/z19/lparisi/nfs-testing/run/data/cbenchio_posix_sequential_write_33aca286",
+            "chmod -R o+wXr /work/z19/z19/lparisi/nfs-testing/run/data/cbenchio_posix_sequential_write_33aca286"
+          ],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_write_33aca286",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_write_33aca286",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "tasks_per_node": 24,
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_write_ec259507",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_ec259507",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_ec259507"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T16:26:35+01:00",
+          "job_completion_time_unix": 1782401195.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.00447392463684082,
+          "time_performance": 0.003268003463745117,
+          "time_run": 26.308762788772583,
+          "time_sanity": 0.0016586780548095703,
+          "time_setup": 0.050058841705322266,
+          "time_total": 5283.983337163925,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:16",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_f342ec33",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0195",
+            "cs-n0211",
+            "cs-n0237",
+            "cs-n0245"
+          ],
+          "job_submit_time": 1782401171.4355526,
+          "jobid": "271522",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=0 %write_test.nodes=4 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "f342ec33",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=4 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 12,
+          "num_gpus_per_node": null,
+          "num_tasks": 96,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 24,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              10.75398042733292,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              16.179047190254426,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              27.36936189629764,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              18.67875300347768,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              28.679238676333437,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_f342ec33",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_f342ec33",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_12",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_ec259507",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_ec259507"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T16:27:15+01:00",
+          "job_completion_time_unix": 1782401235.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.004842281341552734,
+          "time_performance": 0.0035436153411865234,
+          "time_run": 41.946672677993774,
+          "time_sanity": 0.001966714859008789,
+          "time_setup": 0.049278974533081055,
+          "time_total": 5325.204863071442,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:17",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_a6bbc1d7",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0195",
+            "cs-n0211",
+            "cs-n0237",
+            "cs-n0245"
+          ],
+          "job_submit_time": 1782401197.0741184,
+          "jobid": "271523",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=1 %write_test.nodes=4 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "a6bbc1d7",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=4 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 12,
+          "num_gpus_per_node": null,
+          "num_tasks": 96,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 24,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              10.462560879417348,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              14.936958425151882,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              24.987129216450217,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              24.31165149772477,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              26.35751416449288,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_a6bbc1d7",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_a6bbc1d7",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_13",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_ec259507",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_ec259507"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T16:27:54+01:00",
+          "job_completion_time_unix": 1782401274.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.004552364349365234,
+          "time_performance": 0.0034148693084716797,
+          "time_run": 38.24074387550354,
+          "time_sanity": 0.003118753433227539,
+          "time_setup": 0.04848122596740723,
+          "time_total": 5362.705517292023,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:18",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_3ad34723",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0195",
+            "cs-n0211",
+            "cs-n0237",
+            "cs-n0245"
+          ],
+          "job_submit_time": 1782401238.3326461,
+          "jobid": "271524",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=2 %write_test.nodes=4 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "3ad34723",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=4 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 12,
+          "num_gpus_per_node": null,
+          "num_tasks": 96,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 24,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              11.400083157272443,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              15.159442288695278,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              22.409893828667375,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              24.660711400193506,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              27.407670662020767,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_3ad34723",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_3ad34723",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_14",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        },
+        {
+          "build_jobid": null,
+          "build_stderr": null,
+          "build_stdout": null,
+          "dependencies_actual": [
+            [
+              "cbenchio_posix_sequential_write_ec259507",
+              "cirrus-ex:compute",
+              "PrgEnv-gnu"
+            ]
+          ],
+          "dependencies_conceptual": [
+            "cbenchio_posix_sequential_write_ec259507"
+          ],
+          "environ": "PrgEnv-gnu",
+          "fail_phase": null,
+          "fail_reason": null,
+          "filename": "/work/y07/shared/cirrus-ex/cirrus-ex-software/utils/core/reframe/4.8.4/reframe/frontend/testgenerators.py",
+          "fixture": false,
+          "job_completion_time": "2026-06-25T16:28:30+01:00",
+          "job_completion_time_unix": 1782401310.0,
+          "job_stderr": "rfm_job.err",
+          "job_stdout": "rfm_job.out",
+          "partition": "compute",
+          "result": "pass",
+          "run_index": 0,
+          "scheduler": "slurm",
+          "session_uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88",
+          "time_compile": 0.0044918060302734375,
+          "time_performance": 0.0033838748931884766,
+          "time_run": 37.82458186149597,
+          "time_sanity": 0.0020437240600585938,
+          "time_setup": 0.048407554626464844,
+          "time_total": 5399.756199598312,
+          "uuid": "40ec53b5-9d70-4019-b943-e0c3e39ffe88:0:19",
+          "outputdir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/output/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_596694e6",
+          "job_exitcode": 0,
+          "job_nodelist": [
+            "cs-n0195",
+            "cs-n0211",
+            "cs-n0237",
+            "cs-n0245"
+          ],
+          "job_submit_time": 1782401275.872645,
+          "jobid": "271525",
+          "system": "cirrus-ex",
+          "build_locally": true,
+          "build_time_limit": null,
+          "descr": "",
+          "display_name": "cbenchio_posix_sequential_read %.repeat_no=3 %write_test.nodes=4 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "env_vars": {},
+          "exclusive_access": false,
+          "executable": "/work/z19/z19/lparisi/nfs-testing/cbenchio/opt/cbenchio/dev/bin/benchio",
+          "executable_opts": [
+            "config.yaml"
+          ],
+          "extra_resources": {},
+          "hashcode": "596694e6",
+          "keep_files": [],
+          "local": false,
+          "maintainers": [
+            "l.parisi@epcc.ed.ac.uk"
+          ],
+          "max_pending_time": null,
+          "modules": [],
+          "name": "cbenchio_posix_sequential_read %write_test.nodes=4 %write_test.tasks_per_node=24 %write_test.base_path=/work/z19/z19/lparisi/nfs-testing/run/data %write_test.api=posix %write_test.chunk_size=4096",
+          "num_cpus_per_task": 12,
+          "num_gpus_per_node": null,
+          "num_tasks": 96,
+          "num_tasks_per_core": null,
+          "num_tasks_per_node": 24,
+          "num_tasks_per_socket": null,
+          "perfvalues": {
+            "cirrus-ex:compute:bandwidth_0": [
+              11.402229977710927,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_1": [
+              16.88924452783573,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_2": [
+              24.442803723532315,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_3": [
+              20.681019626411075,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ],
+            "cirrus-ex:compute:bandwidth_4": [
+              29.965626746905137,
+              0,
+              null,
+              null,
+              "GB/s",
+              "pass"
+            ]
+          },
+          "postbuild_cmds": [],
+          "postrun_cmds": [],
+          "prebuild_cmds": [],
+          "prefix": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/epcc-reframe/tests/synth/cbenchio",
+          "prerun_cmds": [],
+          "readonly_files": [],
+          "short_name": "cbenchio_posix_sequential_read_596694e6",
+          "sourcepath": "",
+          "sourcesdir": null,
+          "stagedir": "/mnt/lustre/e1000/home/z19/z19/lparisi/nfs-testing/run-reframe/stage/cirrus-ex/compute/PrgEnv-gnu/cbenchio_posix_sequential_read_596694e6",
+          "strict_check": true,
+          "tags": [
+            "performance",
+            "io"
+          ],
+          "time_limit": null,
+          "unique_name": "cbenchio_posix_sequential_read_15",
+          "use_multithreading": null,
+          "valid_prog_environs": [
+            "PrgEnv-gnu"
+          ],
+          "valid_systems": [
+            "cirrus-ex:compute"
+          ],
+          "variables": {}
+        }
+      ]
+    }
+  ],
+  "restored_cases": []
+}
