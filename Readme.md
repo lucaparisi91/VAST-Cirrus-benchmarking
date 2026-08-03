@@ -10,8 +10,16 @@ The cylc framework is used to run the benchmarks. Some paths are hardcoded and y
 
 - cbenchio ( https://github.com/lucaparisi91/cbenchio )
 
-## Running the benchmarks
 
+## Running the benchmarks ( reframe )
+
+Reframe was used to run cbenchio benchmarks 
+
+- Branch used: https://github.com/lucaparisi91/epcc-reframe/tree/cbenchio2
+- Launch script: [run-reframe/reframe.sh](run-reframe/reframe.sh)
+
+## Running the benchmarks ( workflows)
+These are deprecated tests, run before the software upgrade
 Go into the workflows directory and create a python environment
 
 ```bash
@@ -24,5 +32,5 @@ pip install -r requirements.txt
 Once you have created an environment you can run the benchmark using
 
 ```bash
-cylc vip -n <my_benchmark_name>
+cylc vip -n <my_benchmark_name> -S benchmark_config='"<my_yaml_config>"'
 ```
