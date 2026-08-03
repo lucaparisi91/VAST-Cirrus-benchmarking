@@ -1,0 +1,60 @@
+#!/bin/sh
+#
+# NOTE: if using with srun then you should select "SLURM (MPMD)" as the MPI
+#       implementation on the System Settings page of the Options window.
+#
+# WARNING: If you install a new version of Linaro Forge to the same
+#          directory as this installation, then this file will be overwritten.
+#          If you customize this script at all, please rename it.
+#
+# Name: SLURM
+#
+# submit: sbatch
+# display: squeue
+# job regexp: (\d+)
+# cancel: scancel JOB_ID_TAG
+#
+# WALL_CLOCK_LIMIT_TAG: {type=text,label="Wall Clock Limit",default="00:30:00",mask="09:09:09"}
+# QUEUE_TAG: {type=text,label="Queue",default=normal}
+
+#SBATCH --nodes=NUM_NODES_TAG
+#SBATCH --time=WALL_CLOCK_LIMIT_TAG
+#SBATCH --job-name="ddt"
+#SBATCH --output=allinea.stdout
+#SBATCH --error=allinea.stdout
+#SBATCH --ntasks-per-node=288
+#SBATCH --qos=short
+#SBATCH --time=00:20:00
+#SBATCH --partition=standard
+#SBATCH --distribution=block:block
+#SBATCH --cpus-per-task=1
+#SBATCH --hint=nomultithread
+#SBATCH --exclusive
+
+
+. /etc/profile.d/zz-cray-pe.sh
+
+module load PrgEnv-gnu
+module load cray-hdf5-parallel
+module load cray-netcdf-hdf5parallel
+
+export PATH=/work/z19/z19/lparisi/nfs-testing/nemo/xios/xios3/bin:$PATH
+module use /work/z19/z19/lparisi/nfs-testing/environments/benchmarks/modules/Core
+module load hpctoolkit-gcc
+module load forge
+
+export FI_CXI_RX_MATCH_MODE=hybrid
+#export FI_CXI_OPTIMIZED_MRS=false
+export FI_CXI_DEFAULT_CQ_SIZE=1048576
+export SRUN_CPUS_PER_TASK=1
+
+unset SLURM_NTASKS
+unset SLURM_TASKS_PER_NODE
+unset SLURM_NTASKS_PER_NODE
+unset SLURM_NPROCS
+
+LAUNCHER=""
+
+ulimit -c 0
+
+AUTO_LAUNCH_TAG
