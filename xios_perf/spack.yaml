@@ -1,0 +1,115 @@
+# This is a Spack Environment file.
+#
+# It describes a set of packages to be installed, along with
+# configuration settings.
+
+spack:
+
+  specs:
+    - lfric-meta@3.2 +xios +vernier ^xios@2701  ^blitz%gcc_all ^boost%gcc_all  %gcc_all
+    - lfric-meta@3.1.1 +xios +vernier ^xios@2701  ^blitz%gcc_all ^boost%gcc_all  %gcc_all
+    #- lfric@3.2 ^xios@2701 %gcc_all
+
+  concretizer:
+    unify: false
+    'splice:':
+      automatic: false
+  config:
+    install_tree:
+      root: $env/opt
+      padding_length: 120
+  repos:
+    metoffice: $env/repos/metoffice/spack_repo/metoffice
+
+  modules:
+    default:
+      'enable:':
+      - lmod
+      roots:
+        lmod: $env/modules
+      lmod:
+        projections:
+          all: '{name}/{version}'
+          lfric-meta +xios  ^xios@3 %gcc: '{name}-gcc-xios3/{version}'
+          lfric-meta +xios  ^xios@2701 %gcc: '{name}-gcc-xios2/{version}'
+          lfric-meta ~xios %gcc: '{name}-gcc-no-xios/{version}'
+          '%cce': '{name}-cce/{version}'
+          '%gcc': '{name}-gcc/{version}'
+
+        hash_length: 0
+        'hierarchy:': [] # Disable using mpi hierarchy
+        core_compilers: [gcc, cce, intel-oneapi-compilers] # Disable using compiler hierarchy
+
+        hide_implicits: true
+        all:
+          autoload: run
+        heaptrack:
+          autoload: none
+        exclude:
+        - cray-mpich
+        - cray-libsci
+        - libfabric
+        - fftw
+        - hdf5
+        - cray-fftw
+        - parallel-netcdf
+        - netcdf-cxx4
+        - netcdf-fortran
+      arch_folder: false
+
+
+      prefix_inspections:
+        ./lib:
+        - LD_LIBRARY_PATH
+        - LIBRARY_PATH
+        ./lib64:
+        - LD_LIBRARY_PATH
+        - LIBRARY_PATH
+        ./include:
+        - CPATH
+
+  view: false
+
+  packages:
+    all:
+      prefer:
+      - gcc
+    'gcc:':
+      externals:
+      - spec: gcc@=14.2
+        extra_attributes:
+          compilers:
+            c: cc
+            cxx: CC
+            fortran: ftn
+          flags:
+            cflags: -Wno-error=incompatible-pointer-types -Wno-error=implicit-int -Wno-error=implicit-function-declaration -Wno-error=changes-meaning
+            cxxflags: -Wno-error=changes-meaning
+        modules:
+        - cpe/25.03
+        - PrgEnv-gnu/8.6.0
+        - gcc-native/14.2
+        - xpmem/0.2.119-1.3_gef379be13330
+        - craype-x86-turin
+        - craype-network-ofi
+        - libfabric/1.22.0
+        - craype-x86-turin
+
+        extra_rpaths:
+        - /opt/cray/libfabric/1.22.0/lib64/
+        - /opt/xpmem/lib64/
+
+
+      - spec: gcc@=14.2.1
+        extra_attributes:
+          compilers:
+            c: /opt/rh/gcc-toolset-14/root/usr/bin/gcc
+            cxx: /opt/rh/gcc-toolset-14/root/usr/bin/g++
+            fortran: /opt/rh/gcc-toolset-14/root/usr/bin/gfortran
+    lustre:
+      externals:
+      - spec: lustre@2.15.5.2
+        prefix: /usr
+
+
+
